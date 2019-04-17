@@ -11,20 +11,23 @@ body {
 }
 
 
-.card {
+.card-b {
   background: $light-gray;
-  padding: 3rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 
   &__icon {
-    font-size: 3rem;
+    font-size: 2rem;
     color: $dark-gray;
   }
 
   &__content {
-    margin: 3rem 0;
+    padding: 2rem 2rem 0;
+  }
+
+  &__footer {
+    padding: 2rem;
   }
 }

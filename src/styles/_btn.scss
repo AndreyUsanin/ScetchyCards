@@ -4,6 +4,7 @@
   color: $white;
   border-radius: 5px;
   transition: background ease-in .1s;
+  display: inline-block;
 
   &:hover, &:active {
     color: $white;
