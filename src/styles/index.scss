@@ -11,12 +11,30 @@ body {
 }
 
 
-.card-b {
+.card-ba {
   background: $light-gray;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+
+  &__img-box {
+    position: relative;
+  }
+
+  &__overlay {
+    position: absolute;
+    background: $black;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,transparent, $black);
+    color: $gray;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
 
   &__icon {
     font-size: 2rem;
@@ -24,10 +42,15 @@ body {
   }
 
   &__content {
-    padding: 2rem 2rem 0;
+    padding: 1rem 1rem 0;
+    display: flex;
+    justify-content: space-between;
   }
 
   &__footer {
-    padding: 2rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
